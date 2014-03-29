@@ -2,3 +2,5 @@
 *.pyc
 *.jar
 *.model
+weka/data/train.arff
+weka/data/test.arff

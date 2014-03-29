@@ -1,0 +1,90 @@
+
+J48 pruned tree
+------------------
+
+petalwidth <= 0.6: Iris-setosa (36.0)
+petalwidth > 0.6
+|   petalwidth <= 1.7
+|   |   petallength <= 5: Iris-versicolor (43.0/1.0)
+|   |   petallength > 5: Iris-virginica (4.0/1.0)
+|   petalwidth > 1.7: Iris-virginica (37.0/1.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.04 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         117               97.5    %
+Incorrectly Classified Instances         3                2.5    %
+Kappa statistic                          0.9624
+K&B Relative Info Score              11366.0737 %
+K&B Information Score                  179.6269 bits      1.4969 bits/instance
+Class complexity | order 0             189.6178 bits      1.5801 bits/instance
+Class complexity | scheme               16.7296 bits      0.1394 bits/instance
+Complexity improvement     (Sf)        172.8882 bits      1.4407 bits/instance
+Mean absolute error                      0.03  
+Root mean squared error                  0.1225
+Relative absolute error                  6.7713 %
+Root relative squared error             26.0228 %
+Coverage of cases (0.95 level)          98.3333 %
+Mean rel. region size (0.95 level)      34.4444 %
+Total Number of Instances              120     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Iris-setosa
+                 0.955    0.013    0.977      0.955    0.966      0.946    0.986     0.965     Iris-versicolor
+                 0.975    0.025    0.951      0.975    0.963      0.944    0.986     0.959     Iris-virginica
+Weighted Avg.    0.975    0.013    0.975      0.975    0.975      0.962    0.990     0.973     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 36  0  0 |  a = Iris-setosa
+  0 42  2 |  b = Iris-versicolor
+  0  1 39 |  c = Iris-virginica
+
+
+=== Error on test data ===
+
+Correctly Classified Instances          29               96.6667 %
+Incorrectly Classified Instances         1                3.3333 %
+Kappa statistic                          0.9482
+K&B Relative Info Score               2782.841  %
+K&B Information Score                   43.9794 bits      1.466  bits/instance
+Class complexity | order 0              47.2426 bits      1.5748 bits/instance
+Class complexity | scheme                3.5704 bits      0.119  bits/instance
+Complexity improvement     (Sf)         43.6721 bits      1.4557 bits/instance
+Mean absolute error                      0.039 
+Root mean squared error                  0.1248
+Relative absolute error                  8.8261 %
+Root relative squared error             26.5527 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      36.6667 %
+Total Number of Instances               30     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Iris-setosa
+                 0.900    0.000    1.000      0.900    0.947      0.926    0.995     0.983     Iris-versicolor
+                 1.000    0.059    0.929      1.000    0.963      0.935    0.995     0.989     Iris-virginica
+Weighted Avg.    0.967    0.025    0.969      0.967    0.966      0.947    0.996     0.990     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  7  0  0 |  a = Iris-setosa
+  0  9  1 |  b = Iris-versicolor
+  0  0 13 |  c = Iris-virginica
+

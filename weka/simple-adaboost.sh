@@ -39,5 +39,5 @@ java -cp weka.jar weka.filters.unsupervised.instance.RemovePercentage \
 # then we redirect the output to a file
 # use -h at the commandline to see all the available options
 java -Xmx$memory -cp weka.jar weka.classifiers.meta.AdaBoostM1 \
-  -t data/train.arff -T data/test.arff -i -k -d $dataset_fp-J48.model \
+  -t data/train.arff -T data/test.arff -i -k -d $dataset_fp-Adaboost.model \
   -I $rounds -Q -S $seed > summary-adaboost.txt

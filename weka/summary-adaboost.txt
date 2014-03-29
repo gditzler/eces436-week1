@@ -351,8 +351,8 @@ Weight: 0.12
 Number of performed Iterations: 15
 
 
-Time taken to build model: 0.24 seconds
-Time taken to test model on training data: 0.05 seconds
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.02 seconds
 
 === Error on training data ===
 

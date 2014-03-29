@@ -1,6 +1,6 @@
 #!/usr/bash 
 
-# Generate a J48 (i.e., C4.5) decision tree on a data set specified by the 
+# Generate an ensemble using Adaboost.M1 on a data set specified by the 
 # dataset_fp variable
 #
 # By: Gregory Ditzler (gregory.ditzler@gmail.com)
@@ -33,6 +33,9 @@ java -cp weka.jar weka.filters.unsupervised.instance.RemovePercentage \
 #$ -i : outputs detailed information-retrieval statistics for each class
 #$ -k : outputs information-theoretic statistics 
 #$ -d : sets model output file 
+#$ -I : number of classifiers
+#$ -Q : resample the data on each round
+#$ -S : set the random seed
 # then we redirect the output to a file
 # use -h at the commandline to see all the available options
 java -Xmx$memory -cp weka.jar weka.classifiers.meta.AdaBoostM1 \

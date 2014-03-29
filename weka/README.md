@@ -14,3 +14,9 @@ Download the executable [Weka jar file](http://www.cs.waikato.ac.nz/ml/weka/down
 * `summary-j48.txt` - J48 results
 * `weka.jar` - You need to add this file! 
 
+# some useful links
+
+to be added
+
+
+

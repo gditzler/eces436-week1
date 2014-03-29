@@ -21,9 +21,9 @@ java -cp weka.jar weka.filters.unsupervised.instance.Randomize -S $seed \
 # split the original arff file into a training and testing file. here
 # we use a 80(train)/20(test)% split
 java -cp weka.jar weka.filters.unsupervised.instance.RemovePercentage \
-  -P 20 -i $dataset_fp-random.arff -o train.arff 
+  -P 20 -i $dataset_fp-random.arff -o data/train.arff 
 java -cp weka.jar weka.filters.unsupervised.instance.RemovePercentage \
-  -P 80 -i $dataset_fp-random.arff -o test.arff 
+  -P 80 -i $dataset_fp-random.arff -o data/test.arff 
 
 # now we can build/test our classifier. here is whats going on: 
 #$ -t : training file
@@ -33,5 +33,5 @@ java -cp weka.jar weka.filters.unsupervised.instance.RemovePercentage \
 #$ -d : sets model output file 
 # then we redirect the output to a file
 # use -h at the commandline to see all the available options
-java -Xmx$memory -cp weka.jar weka.classifiers.trees.J48 -t train.arff \
-  -T test.arff -i -k -d J48-$dataset_fp.model > summary-j48.txt
+java -Xmx$memory -cp weka.jar weka.classifiers.trees.J48 -t data/train.arff \
+  -T data/test.arff -i -k -d $dataset_fp-J48.model > summary-j48.txt

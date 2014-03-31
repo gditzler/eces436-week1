@@ -4,3 +4,4 @@
 *.model
 weka/data/train.arff
 weka/data/test.arff
+assignment/data/weka-sln.arff

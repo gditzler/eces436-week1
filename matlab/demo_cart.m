@@ -1,6 +1,8 @@
 % Generate a CART decision tree of Fisher's Iris data set. Demonstrate some
 % of the basic functionality that we can use with Matlabs CART
 % implementation. 
+%
+% By: Gregory Ditzler (gregory.ditzler@gmail.com)
 
 % best tree lines to start a program with!
 clc;

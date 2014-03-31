@@ -11,9 +11,12 @@ load ionosphere;
 n = size(X,1);   % number of data instances
 k = 10;          % number of folds
 
-cv = cvpartition(n,'kfold',k); % initialize the CV
+cv = cvpartition(n,'k',k); % initialize the CV
+calc_error = @(actual,prediction)(sum(~strcmp(actual,prediction))/length(prediction));
 
 errors = zeros(k,1);
+errors2 = zeros(k,1);
+
 for i = 1:k
   % get the training and testing indices from the cv object for the ith
   % iteration. 
@@ -34,6 +37,10 @@ for i = 1:k
     end
   end
   errors(i) = err/length(yhat);
+  errors2(i) = calc_error(yhat, pred);
 end
 
+% gives the same result!
 average_errors = mean(errors);
+average_errors2 = mean(errors2);
+

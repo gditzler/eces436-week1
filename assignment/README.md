@@ -23,4 +23,19 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
   % load the data; X -> data; Y -> labels
   load ionoshpere;
   [n_samples,n_features] = size(X);
+
+  % call cvpartion here
+  
+  % run CV
+  error = zeros(1,5);
+  for k = 1:5
+    % use the cv partition object to split the training/testing data
+
+    % train the naive bayes classifier
+
+    % test the naive bayes classifier
+
+    % measure the error (% of incorrect predictions on the test data)
+  end
+  disp(mean(error));
 ```

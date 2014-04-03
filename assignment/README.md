@@ -11,5 +11,5 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
 
 ## Classification Tools in Matlab
 
-there is more
-
+* Run 5-fold cross validation on Fisher's Iris and the ionoshpere data set. 
+* Helpful functions: `NaiveBayes.fit`, `cvpartition`, `predict`, `load`.

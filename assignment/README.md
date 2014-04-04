@@ -4,8 +4,8 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
 
 ## Pattern Recognition in Weka
 
-* Evaluate a naive Bayes classifier on the `diabetes.arff` data set using 15-fold cross validation. Set the option to use a kernel density estimator (see the `useKernelEstimator` option). Report the classification error and the ROC curve for the `tested_positive` class. What is the auROC?
-* Evaluate AdaBoost.M1 on the same data set. Use `J48` as the base classifier and run AdaBoost for 50 iterations using resampling. Report the classification error and the ROC curve for the `tested_positive` class. What is the auROC?
+* Evaluate a naive Bayes classifier on the `diabetes.arff` data set using 15-fold cross validation. Set the option to use a kernel density estimator (see the `useKernelEstimator` option). Report the classification error and the ROC curve. What is the auROC?
+* Evaluate AdaBoost.M1 on the same data set. Use `J48` as the base classifier and run AdaBoost for 50 iterations using resampling. Report the classification error and the ROC curve. What is the auROC?
 * Repeat for the `diabetes.arff` data set. However, rather than using a naive Bayes in Part 1, choose a different classifier. 
 * Hint: Perform the same comparison using Weka's experimenter.  
 

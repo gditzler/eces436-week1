@@ -4,14 +4,14 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
 
 ## Pattern Recognition in Weka
 
-* Evaluate a naive Bayes classifier on the `diabetes.arff` data set using 15-fold cross validation. Set the option to use a kernel density estmator (see the `useKernelEstimator` option). Report the classification error and the ROC curve for the `tested_positive` class. What is the auROC?
+* Evaluate a naive Bayes classifier on the `diabetes.arff` data set using 15-fold cross validation. Set the option to use a kernel density estimator (see the `useKernelEstimator` option). Report the classification error and the ROC curve for the `tested_positive` class. What is the auROC?
 * Evaluate AdaBoost.M1 on the same data set. Use `J48` as the base classifier and run AdaBoost for 50 iterations using resampling. Report the classification error and the ROC curve for the `tested_positive` class. What is the auROC?
 * Repeat for the `diabetes.arff` data set. However, rather than using a naive Bayes in Part 1, choose a different classifier. 
-* Hint: Perform the same comparision using Weka's experimentor.  
+* Hint: Perform the same comparison using Weka's experimenter.  
 
 ## Classification Tools in Matlab
 
-* Run 5-fold cross validation on Fisher's Iris and the ionoshpere data set. Evaluate a naive Bayes classifier and report the error and auROC on the hold out data set. Furthermore, report the ROC curve from one of the folds. These data sets are included with Matlab installation. 
+* Run 5-fold cross validation on Fisher's Iris and the ionosphere data set. Evaluate a naive Bayes classifier and report the error and auROC on the hold out data set. Furthermore, report the ROC curve from one of the folds. These data sets are included with a Matlab installation. 
 * Helpful functions: `NaiveBayes.fit`, `cvpartition`, `predict`, `load`.
 * Starter Code: 
 ```matlab 

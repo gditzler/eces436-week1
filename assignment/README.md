@@ -23,6 +23,8 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
 
   % load the data; X -> data; Y -> labels
   load ionoshpere;
+  X(:, [1,2]) = [];  % delete features 1 & 2
+
   [n_samples,n_features] = size(X);
 
   % call cvpartion here

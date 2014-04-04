@@ -11,9 +11,9 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
 
 ## Classification Tools in Matlab
 
-* Run 5-fold cross validation on Fisher's Iris and the ionosphere data set. Evaluate a naive Bayes classifier and report the error and auROC on the hold out data set. Furthermore, report the ROC curve from one of the folds. These data sets are included with a Matlab installation. 
+* Run 5-fold cross validation on the ionosphere data set. Evaluate a naive Bayes classifier and report the error and auROC on the hold out data set. Furthermore, report the ROC curve from one of the folds. These data sets are included with a Matlab installation. 
 * Helpful functions: `NaiveBayes.fit`, `cvpartition`, `predict`, `load`.
-* Hint: You will need to use the naive Bayes' posterior probabilities to generate the ROC. See `doc perfcurve`.
+* Hint: You will need to use the naive Bayes' posterior probabilities to generate the ROC. See `doc perfcurve` and `demo_naivebayes.m` (in this repository).
 * Starter Code: 
 ```matlab 
   % clean up the work space
@@ -36,7 +36,7 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
 
     % train the naive bayes classifier
 
-    % test the naive bayes classifier
+    % test the naive bayes classifier (predictions + posteriors)
 
     % measure the error (% of incorrect predictions on the test data)
     

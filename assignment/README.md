@@ -11,7 +11,7 @@ The data sets are saved in `arff` files and can be found in the `assignment/data
 
 ## Classification Tools in Matlab
 
-* Run 5-fold cross validation on Fisher's Iris and the ionoshpere data set. These data sets are included with Matlab installation. 
+* Run 5-fold cross validation on Fisher's Iris and the ionoshpere data set. Evaluate a naive Bayes classifier and report the error and auROC on the hold out data set. Furthermore, report the ROC curve from one of the folds. These data sets are included with Matlab installation. 
 * Helpful functions: `NaiveBayes.fit`, `cvpartition`, `predict`, `load`.
 * Starter Code: 
 ```matlab 
